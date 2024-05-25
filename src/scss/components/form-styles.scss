@@ -1,0 +1,106 @@
+.payment {
+    height: 100vh;
+    &__box {
+      flex-basis: 100%;
+      border-radius: 30px;
+      padding: 28px 28px 28px 28px;
+      background: rgb(255, 255, 255);
+      overflow: auto;
+      max-width: 1130px;
+      @include media-mx(420) {
+        padding: 13px;
+        
+      }
+    }
+    
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;  
+      @include media-mx(768) {
+        flex-direction: column;
+        
+      }
+      @include media-mx(420) {
+        padding: 0;
+  
+        
+      }
+    }
+    &__navigation{
+      display: flex;
+      justify-content: space-between;
+      margin-left: auto;
+      margin-top: 36px;
+      @include media-mx(1024) {
+        flex-direction: column-reverse;
+             
+      }
+    }
+  }
+  
+  .payment .basket__wrapper {
+    border-radius: 30px;
+  }
+  .road {
+    // .road__list
+  
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 7px;
+      margin-bottom: 16px;
+    }
+  
+    // .road__item
+  
+    &__item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 12px 24px 12px 24px;
+  
+      border-radius: 150px;
+      /* surface */
+      background: rgb(245, 245, 245);
+      font-size: 17px;
+      font-family: 'Poppins';
+      font-weight: 500;
+      a {
+        color: Black;
+      }
+      &-active {
+        border: 1px solid rgb(8, 28, 0);
+      }
+      &-completed {
+        border: none;
+        background-color: #87e464;
+      }
+    }
+  }
+  .form-btn-next {
+    padding: 12px 40px;
+    background-color: #87e464;
+    border-radius: 150px;
+    margin-left: auto;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    &:disabled{
+      opacity: 0.8;
+    }
+    @include media-mx(1024) {
+      width: 100%;
+    }
+  }
+  .form-btn-prev {
+    color: #000;
+    padding: 12px 40px;
+    background-color:transparent;
+    border-radius: 150px;
+    width: 100px;
+    margin-right: auto;
+    @include media-mx(1024) {
+      width: 100%;
+      text-align: center;
+    }
+  }

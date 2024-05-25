@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', { 'title': 'Spawn' })
+  <body>
+    <section class="info payment">
+      <div class="payment__container">
+          <div class="payment__box">
+            <div class="payment__road road">
+              <ul class="road__list">
+                <li class="road__item road__item-completed">
+                  <a href="cart.html">Cart</a>
+                </li>
+                <li class="road__item road__item-active">
+                  <a href="form-information.html">Information</a>
+                </li>
+                <li class="road__item">
+                  <a href="form-spawn.html">Spawn</a>
+                </li>
+                <li class="road__item">
+                  <a href="form-payment.html">Payment</a>
+                </li>
+              </ul>
+            </div>
+            <!-- action="https://jsonplaceholder.typicode.com/posts" -->
+           <div class="user-data" id="user-data">
+            <div class="user-data__box">
+              <span class="user-data__name">
+                Email
+              </span>
+              <span class="user-data__value" data-user="email">
+                
+              </span>
+              <a class="user-data__btn" href="form-information.html" data-form-btn-prev>Change</a>
+            </div>
+            <div class="user-data__box">
+              <span class="user-data__name">
+                Spawn to
+              </span>
+              <span class="user-data__value" data-user="address">
+              
+              </span>
+              <a class="user-data__btn" href="form-information.html" data-form-btn-prev>Change</a>
+            </div>
+           </div>
+
+            <fieldset class="delivery">
+              <legend>Shipping method</legend>
+              <label class="delivery-lable">
+                <input class="radio-input" type="radio" name="delivery__method" id="delivery-standart" value="10$">
+                <h6 class="delivery-lable__title"><span class="delivery-lable__name">Standard International</span>
+                  <span class="delivery-lable__price">10$</span>
+                </h6>
+                <span class="delivery-lable__info">Estimated delivery Monday, 21 Aug–Monday, 11 Sept</span>
+              </label>
+
+              <label class="delivery-lable">
+                <input class="radio-input" type="radio" name="delivery__method" id="delivery-fast" value="50$">
+                <h6 class="delivery-lable__title"><span class="delivery-lable__name">Fast</span>
+                  <span class="delivery-lable__price">50$</span>
+                </h6>
+                <span class="delivery-lable__info">Estimated delivery Monday, 21 Aug–Monday, 11 Sept</span>
+
+              </label>
+            </fieldset>
+            <div class="payment__navigation">
+              <a class="form-btn-prev" href="form-information.html" data-form-btn-prev>Back</a>
+              <button class="form-btn-next" type="submit">Continue to shiping</button>
+            </div>
+          </div>
+          <div class="basket" id="basket">
+            <div class="basket__box">
+              <div class="basket__wrapper">
+                <h6 class="basket__title">
+                  Your Basket
+                </h6>
+                <div class="basket__empty none">
+                  Корзина пуста
+                </div>
+                <div class="basket__empty none">
+                  Корзина пуста
+                </div>
+                <ul class="basket__list" id="basket-list">
+                </ul>
+                <div class="gift">
+                  <input  class='gift__input' id="gift-input" type='text' name='gift' placeholder='Gift card or discount'>
+                  <button class="gift__submit" type="submit" id="search-submit">
+                    <img class="gift__img"  src="@img/input_frog1.png" alt="">
+                  </button>
+                </div>
+                <div class="basket__info">
+                  <div class="basket__price ">
+                    <div class="discount">
+                      <p class="discount__title">
+                        discount
+                      </p>
+                      <p class="discount__value">
+                        30$
+                      </p>
+                    </div>
+                    <div class="shipping">
+                      <span class="shipping__title">
+                        shipping
+                      </span>
+                      <span class="shipping-price__value" id="basket-shipping-price">
+                        --
+                      </span>                         
+                    </div>
+                    <div class="total-price">
+                      <span class="total-price__title">
+                        Total
+                      </span>
+                      <span class="total-price__value" id="basket-total-price">
+                        0$
+                      </span>                         
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+  </section>
+   
+    
+    <script defer src="js/form.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+.header {
+    width: 100%;
+    transition: background-color var(--bs-transition);
+    z-index: 50;
+    position: relative;
+  
+    .header-is-sticky & {
+      // ..стили для липкого хедера
+      position: fixed;
+    }
+  
+    // .header__container
+    &__container {
+      height: rem($headerHeight);
+      padding: rem(24) rem(15) rem(24) rem(15);
+      display: flex;
+      align-items: center;
+      .header-is-sticky & {
+        height: rem($headerHeight - 50);
+      }
+    }
+  }

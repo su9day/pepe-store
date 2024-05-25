@@ -1,0 +1,23 @@
+.basket-fade {
+    backdrop-filter: blur(0px);
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding: 30px 30px 30px 0;
+    animation: hideBasket 0.5s ease-in-out forwards;
+  
+    &-active {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      animation: showBasket 0.5s ease-in-out forwards;
+    }
+    @include media-mx(1024) {
+      backdrop-filter: none;
+      background-color: #87e464;
+      padding: 0;
+    }
+  }

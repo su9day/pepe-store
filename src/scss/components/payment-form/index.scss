@@ -1,0 +1,231 @@
+.payment {
+
+    // .payment__wallet
+
+    &__wallet {
+
+    }
+    &__title{
+        font-family: 'Poppins';
+        font-size: 17px;
+        line-height: prc(24,17);
+        margin-bottom: 16px;
+    }
+    &__notice{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 18px;
+    }
+    &__notice-text{
+        font-size: 17px;
+        line-height: prc(24,17);
+        color: #FF8C39;
+    }
+
+}
+.wallet {
+    border-radius: 15px;
+    background: rgb(245, 245, 245);
+    padding: 12px;
+    position: relative;
+    overflow: hidden;
+    // .wallet__number
+
+    &__number {
+        margin-bottom: 16px;
+    }
+
+    // .wallet__btc
+
+    &__btc {
+    margin-bottom: 16px;
+    }
+
+    // .wallet__qr
+
+    &__qr {
+    }
+
+    &__decor {
+        position: absolute;
+        bottom: -40px;
+        right: -25px;
+        @include media-mx(1024) {
+            display: none;
+        }
+    
+    }
+}
+.number {
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    padding: 16px;
+    // .number__price
+
+    &__price {
+        
+    }
+
+    // .number__token
+
+    &__token {
+    }
+}
+.number-price {
+    display: flex;
+    justify-content: space-between;
+        &__total{
+            font-size: 20px;
+            font-weight: 400;
+            line-height: prc(24,20);
+            text-transform: uppercase;
+        }
+        &__timer{
+            font-size: 30px;
+            line-height: prc(36,30);
+            text-transform: uppercase;
+        }
+}
+.number-token {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    @include media-mx(1024) {
+        flex-direction: column;
+        align-items: flex-start;
+        font-family: 'Poppins';
+        
+      }
+    // .number-token__name
+    &__box{
+        display: flex;
+        align-items: center;
+        
+        gap: 8px;
+        
+
+    }
+    &__name {
+        border-radius: 40px;
+        background: rgb(135, 228, 100);
+        padding: 5px 10px;
+        font-size: 16px;
+        line-height: prc(28,16);
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+    // .number-token__code
+
+    &__code {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: prc(28,16);
+        
+
+    }
+
+    // .number-token__copy
+
+    &__copy {
+        background-color: transparent;
+    }
+
+    // .number-token__decor
+
+    &__decor {
+        text-transform: uppercase;
+        position: relative;
+        padding: 0 42px;
+        align-self:center;
+        &::before{
+            content: '';
+            width: 32px;
+            height: 1px;
+            background-color: #87E464;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            @include media-mx(768) { 
+                width: 45%;
+      }
+        }
+        &::after{
+            content: '';
+            width: 32px;
+            height: 1px;
+            background-color: #87E464;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            @include media-mx(768) { 
+                width: 45%;
+      }
+        }
+        @include media-mx(768) { 
+                  width: 100%;
+                  text-align: center;
+        }
+    }
+}
+.btc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 4px 12px 20px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+    gap: 5px;
+    // .btc__code
+    &__code{
+        
+        overflow-wrap: anywhere;
+    }
+    &__copy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background: rgb(135, 228, 100);
+    padding: 24px;
+    svg{
+        fill: #000;
+        }
+    
+    }
+}
+
+    // .btc__copy
+
+    
+
+.wallet-qr {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 16px;
+    @include media-mx(420) {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    // .wallet-qr__img
+
+    &__img {
+    }
+
+    // .wallet-qr__text
+
+    &__text {
+        font-size: 55px;
+        font-family: 'Poppins'; 
+        font-size: 15px;
+        line-height: prc(24,15);
+        max-width: 478px;
+    }
+
+    // .wallet-qr__decor
+
+    
+}

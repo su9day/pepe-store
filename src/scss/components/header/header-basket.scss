@@ -1,0 +1,25 @@
+.header-basket {
+    // .basket__btn
+    margin-right: 6px;
+    &__btn {
+      background-color: transparent;
+      width: rem(52);
+      height: rem(52);
+      border-radius: 50%;
+    }
+  
+    // .basket__counter
+  
+    &__counter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: var(--primary-color);
+      border-radius: 30px;
+      width: rem(28);
+      height: rem(24);
+      font-family: 'Poppins', sans-serif;
+      line-height: prc(15, 24);
+      margin-right: rem(14);
+    }
+  }

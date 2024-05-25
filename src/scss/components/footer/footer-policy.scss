@@ -1,0 +1,44 @@
+.footer-policy {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: var(--primary-color);
+    border-radius: 30px;
+    margin-top: 10px;
+    padding: 20px 40px 20px 40px;
+  
+    @include media-mx(1024) {
+      font-size: 12px;
+    }
+    @include media-mx(768) {
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      text-align: center;
+    }
+  
+    // .footer-policy__rights
+  
+    &__rights {
+      margin-right: auto;
+      text-transform: uppercase;
+      line-height: prc(24, 15);
+    }
+  
+    // .footer-policy__service
+  
+    &__service {
+      text-transform: uppercase;
+      font-size: 15px;
+      line-height: prc(24, 15);
+      color: #081c00;
+    }
+  
+    // .footer-policy__policy
+  
+    &__policy {
+      text-transform: uppercase;
+      font-size: 15px;
+      line-height: prc(24, 15);
+      color: #081c00;
+    }
+  }

@@ -1,0 +1,34 @@
+$mainOffset: 15; // отступы безопасности для контейнера
+$maxWidth: 1920; // максимальная ширина страницы
+$minWidth: 320; // минимальная ширина телефона
+$containerWidth: 1544; // ширина контейнера из макета
+$maxWidthContainer: $containerWidth + ($mainOffset * 2); // ширина контейнера с учетом padding слева и справа
+
+$headerHeight: 100;
+$footerHeight: 100;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+
+:root {
+
+  --bs-font-family:  'Krona One', sans-serif; // Семейство шрифта по умолчанию
+  --bs-font-size: 15px; // Размер шрифта по умолчанию
+  --bs-font-weight: 400; // Жирность шрифта по умолчанию
+  --bs-line-height: 1; // Базовая высота шрифта
+  --bs-font-color: #081C00; // Цвет шрифта по умолчанию
+  --bs-transition: .3s ease-in-out;
+  --bs-radius: 10px;
+
+  --secondary-font-family:'Poppins', sans-serif;
+  --primary-color: #87E464;
+  --primary-hover-color: #2d2d2d;
+  --secondary-color: #ff4040;
+  --white-color: #fff;
+  --black-color: #000000;
+
+  --bs-shadow: 0px 2px 3px rgba(#000, 10%), 0px 8px 3px rgba(#000, 10%);
+  --hover-shadow: 0 0 5px 0 rgba(#000, 10%),
+                  0 0 10px 0 rgba(#000, 10%),
+                  0 0 15px 0 rgba(#000, 10%);
+}

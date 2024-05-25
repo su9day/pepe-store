@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', { 'title': 'Shop' })
+<body>
+    @@include('html/header.html',{})
+    <section class="shop">
+        <div class="shop__container">
+            <img class="shop__logo" src="@img/shoplogo.png" alt="">
+            <div class="shop__navigation shop-nav" id="shop-nav">
+                <div class="shop-nav__search search">
+                    <button class="search__button">
+                      <svg class="svg-searchh-dims">
+                        <use xlink:href="@img/sprite.svg#searchh"></use>
+                      </svg>
+                    </button>
+                    <form class="search__form">
+                      <input  class='search__input search__input-active' id="shop-search-input" type='text' name='search' placeholder='What are you looking for?'>
+                      <button class="search__submit search__submit-active" type="submit" id="search-submit">
+                        <img class="search__img"  src="@img/input_frog1.png" alt="#">
+                      </button>
+                    </form>
+                </div>
+                <div class="shop-nav__box">
+                    <button class="shop-nav__btn" type="button" id="filter-menu-btn" data-type="popup">
+                        <svg class="svg-filter-dims" data-type="popup">
+                            <use xlink:href="@img/sprite.svg#filter"></use>
+                        </svg>
+                    </button>
+                    
+                    <button class="shop-nav__item" type="button" id="filter-price">
+                        <svg class="svg-arrow-down-dims none">
+                            <use xlink:href="@img/sprite.svg#arrow-down"></use>
+                        </svg>
+                        price
+                    </button>
+                    <button class="shop-nav__item" type="button" id="filter-popular">
+                        <svg class="svg-arrow-down-dims none">
+                            <use xlink:href="@img/sprite.svg#arrow-down"></use>
+                        </svg>
+                        popular
+                    </button>
+                </div>
+            </div>
+            <ul class="shop__filters-list filter-list" id="filter-list">
+                <div class="filter-list__wrapper" id="filter-list-wrapper">
+                    
+                </div>
+                <button class="filter-list__item filter-list__clear" type="button" data-filter-clear>
+                    Clear
+                    <svg class="svg-trash-alt-dims">
+                        <use xlink:href="@img/sprite.svg#trash-alt"></use>
+                    </svg>
+                </button>
+            </ul>
+            <ul class="shop__list" id="shop-list">
+                
+            </ul>
+            <div class="popup" data-popup="popup" data-close-overlay>
+                <div class="popup__wrapper">
+                    <div class="popup__content">
+                        <div class="filter-box" id="filter-box"> 
+                            <span class="filter-box__title">Filter</span>
+                            <svg class="svg-close-basket-dims filter-box__close button-close">
+                                <use xlink:href="@img/sprite.svg#close-basket"></use>
+                            </svg>
+                            <div class="filter-type">
+                                <span>type</span>
+                                
+                                <div class="filter-type__wrapper">
+                                    <input class="filter-type__input" type="checkbox" name="type" value="cap" id="type-cap">
+                                    <label for="type-cap">
+                                        cap
+                                    </label>
+                                    <input class="filter-type__input" type="checkbox" name="type" value="t-shirt" id="type-t-shirt">
+                                    <label for="type-t-shirt">
+                                        t-shirt
+                                    </label>
+                                    <input class="filter-type__input" type="checkbox" name="type" value="boots" id="type-boots">
+                                    <label for="type-boots">
+                                        boots
+                                    </label>
+                                    <input class="filter-type__input" type="checkbox" name="type" value="socks" id="type-socks">
+                                    <label for="type-socks">
+                                        socks
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter-size">
+                                <span>select size</span>
+                                <div class="filter-size__wrapper">
+                                    <input class="filter-size__input" type="checkbox" name="size" value="s" id="size-s">
+                                    <label for="size-s">
+                                        S
+                                    </label>
+                                    <input class="filter-size__input" type="checkbox" name="size" value="m" id="size-m">
+                                    <label for="size-m">
+                                        M
+                                    </label>
+                                    <input class="filter-size__input" type="checkbox" name="size" value="l" id="size-l">
+                                    <label for="size-l">
+                                        L
+                                    </label>
+                                    <input class="filter-size__input" type="checkbox" name="size" value="xl" id="size-xl">
+                                    <label for="size-xl">
+                                        XL
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter-color">
+                                <span>select color</span>
+                                <div class="filter-color__wrapper">
+                                    <input class="filter-color__input" type="checkbox" name="color" value="blue" id="color-blue" >
+                                    <label class="color__blue" for="color-blue">
+                                    </label>
+                                    <input class="filter-color__input" type="checkbox" name="color" value="red" id="color-red">
+                                    <label class="color__red" for="color-red">
+                                    </label>
+                                    <input class="filter-color__input" type="checkbox" name="color" value="green" id="color-green">
+                                    <label class="color__green" for="color-green">
+                                    </label>
+                                    <input class="filter-color__input" type="checkbox" name="color" value="white" id="color-white">
+                                    <label class="color__white" for="color-white">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter-actions">
+                                <button class="filter-actions__clear button-close" type="button" data-filter-clear>
+                                    clear filters
+                                </button>
+                                <button class="filter-actions__apply button-close" type="button" id="apply-btn">
+                                    apply
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+    @@include('html/footer.html',{})
+    <script defer src="js/shop.min.js"></script>
+</body>
+</html>

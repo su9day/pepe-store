@@ -1,0 +1,75 @@
+@use 'sass:math';
+
+/**
+* Подключение шрифтов локально из папки "./src/fonts"
+*/
+@import 'config/fonts';
+
+/** Подключение переменных */
+@import 'config/vars';
+
+/**
+* Подключение sass function и mixins и extends стилей
+*/
+@import 'config/functions';
+@import 'config/mixins';
+@import 'config/placeholders';
+
+/** Обнуление */
+@import 'config/reset';
+
+/**
+* Библиотеки
+* раскомментировать для использования
+*/
+// @import 'libs/aos';
+@import 'libs/swiper';
+
+/**
+* Подключение custom scrollbar для всего сайта
+*/
+@import 'config/scrollbar';
+
+/**
+* Общие параметры, шаблоны(заготовки) и вспомогательные классы
+*/
+@import 'config/base';
+
+
+
+/**
+* Подключение стилей отдельных блоков и секций
+*/
+@import 'components/header';
+@import 'components/basket/';
+
+@import 'components/top';
+@import 'components/spoiler';
+@import 'components/product-cart';
+@import 'components/guide-cart';
+@import 'components/svg';
+@import 'components/slider';
+@import 'components/info';
+@import 'components/categories';
+@import 'components/footer';
+@import 'components/form-styles';
+@import 'components/information-form';
+@import 'components/spawn-form';
+@import 'components/payment-form';
+@import 'components/goMail';
+@import 'components/shop';
+@import 'components/popup';
+@import 'components/added-popup';
+
+/**
+* БЕМ блоки используемые во всё проекте
+*/
+@import 'config/common';
+
+
+
+body{
+    background-color: var(--primary-color);
+}
+
+

@@ -1,0 +1,55 @@
+.user-data {
+  width: 100%;
+  border-radius: 15px;
+  background: rgb(245, 245, 245);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+  margin-bottom: 25px;
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media-mx(1024) {
+      display: grid;
+      grid-template-rows: repeat (2,30px);
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  &__name {
+    color: rgb(113, 113, 113);
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    min-width: 100px;
+    word-wrap: break-word;
+   
+  }
+  &__value {
+    display: inline-block;
+    word-wrap: break-word;
+    min-width: 150px;
+    text-align: left;
+    color: rgb(8, 28, 0);
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 24px;
+    @include media-mx(1024) {
+      grid-column: 1/2;
+    }
+  }
+  &__btn {
+    background-color: transparent;
+    cursor: pointer;
+    color: rgb(135, 228, 100);
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: auto;
+    max-width: 60px;
+  }
+}

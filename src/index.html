@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', {
+    'title': 'Index'
+  })
+  <body>
+    @@include('html/header.html',{})
+    @@include('html/top.html',{})
+    @@include('html/slider-featured.html',{
+      'title': 'featured item '
+    })
+    @@include('html/slider-buying-guide.html',{
+      'title': 'how to buy '
+    })
+    @@include('html/about.html',{})
+    @@include('html/slider-news.html',{
+      'title': 'news drop'
+    })
+    @@include('html/tokens.html',{})
+    @@include('html/categories.html',{})
+    @@include('html/footer.html',{})
+    @@include('html/script.html',{})
+    <script defer src="js/index.min.js"></script>
+  </body>
+</html>
+

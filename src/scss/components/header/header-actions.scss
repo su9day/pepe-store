@@ -1,0 +1,35 @@
+.actions-header {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+    // .actions-header__search
+  
+    &__search {
+      
+    }
+  
+    // .actions-header__basket
+  
+    &__basket {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  
+      background-color: var(--white-color);
+      border-radius: 40px;
+    }
+  
+    // .actions-header__btn
+  
+    &__btn {
+      padding: rem(14) rem(32);
+      border-radius: 150px;
+      color: rgb(8, 28, 0);
+      line-height: prc(24, 15);
+      background-color: var(--white-color);
+      text-transform: uppercase;
+      @include media-mx(600) {
+        display: none;
+      }
+    }
+  }

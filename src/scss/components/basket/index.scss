@@ -1,0 +1,37 @@
+@import './basket-styles.scss';
+@import './basket-gift.scss';
+@import './basket-item.scss';
+@import './basket-price.scss';
+@import './basket-fade.scss';
+
+@keyframes showBasket {
+    0% {
+      backdrop-filter: blur(20px);
+      z-index: 0;
+      opacity: 0.4;
+      visibility: hidden;
+    }
+    100% {
+      z-index: 2;
+      opacity: 1;
+      visibility: visible;
+      backdrop-filter: blur(30px);
+    }
+  }
+@keyframes hideBasket {
+    from {
+      backdrop-filter: blur(30px);
+      opacity: 1;
+      visibility: visible;
+    }
+    to {
+      backdrop-filter: blur(0px);
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+
+
+  
+ 

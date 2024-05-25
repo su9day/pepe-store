@@ -1,0 +1,54 @@
+.delivery {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 36px;
+  @include media-mx(1024) {
+    flex-direction: column;
+  }
+}
+.delivery-lable {
+  width: 100%;
+  padding: 20px 24px;
+  border-radius: 15px;
+  background: rgb(245, 245, 245);
+
+  // .delivery-lable__title
+  &:has(.radio-input:checked) {
+    border: 1px solid rgb(8, 28, 0);
+  }
+
+  &__title {
+    color: rgb(8, 28, 0);
+    font-family: Krona One;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+
+  // .delivery-lable__price
+
+  &__price {
+    color: rgb(8, 28, 0);
+    font-family: Krona One;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  // .delivery-lable__info
+
+  &__info {
+    color: rgb(113, 113, 113);
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+}
+
+.radio-input {
+  z-index: -1;
+  opacity: 0;
+  position: absolute;
+}

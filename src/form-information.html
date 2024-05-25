@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/head.html', { 'title': 'Information' })
+  <body>
+    <section class="info payment">
+      <div class="payment__container">
+        <div class="payment__box">
+          <div class="payment__road road">
+            <ul class="road__list">
+              <li class="road__item road__item-completed">
+                <a href="cart.html">Cart</a>
+              </li>
+              <li class="road__item road__item-active">
+                <a href="form-information.html">Information</a>
+              </li>
+              <li class="road__item">
+                <a href="form-spawn.html">Spawn</a>
+              </li>
+              <li class="road__item">
+                <a href="form-payment.html">Payment</a>
+              </li>
+            </ul>
+          </div>
+          <!-- action="https://jsonplaceholder.typicode.com/posts" -->
+          <form class="payment__form form">
+            <fieldset class="form__contact">
+              <legend>Contact</legend>
+              <label for="contact" class="sr-only">contact</label>
+              <input
+                class="form-input"
+                name="contact"
+                type="email"
+                placeholder="Email"
+                id="input-email"
+                data-validate
+              />
+              <label class="checkbox">
+                <input type="checkbox" name="news" class="checkbox__input" />
+                <svg class="svg-done-dims checkbox__icon">
+                  <use xlink:href="@img/sprite.svg#done"></use>
+                </svg>
+                Email me with news and offers
+              </label>
+            </fieldset>
+            <fieldset class="form__address">
+              <legend>Shipping address</legend>
+              <div class="form__address-wrapper">
+                <select class="form-country" name="country" id="input-country">
+                  <option value="Russia">Russia</option>
+                  <option value="Bolgaria">Bolgaria</option>
+                  <option value="Japan">Japan</option>
+                  <option value="Shweden">Shweden</option>
+                </select>
+                <label for="first-name" class="sr-only">First Name</label>
+                <input
+                  class="form-input"
+                  id="input-first-name"
+                  name="first-name"
+                  type="text"
+                  placeholder="First Name"
+                  required
+                  data-validate
+                />
+
+                <label for="last-name" class="sr-only">Last Name</label>
+                <input
+                  class="form-input"
+                  id="input-last-name"
+                  name="last-name"
+                  type="text"
+                  placeholder="Last Name"
+                  data-validate
+                />
+
+                <label for="company" class="sr-only">Company</label>
+                <input
+                  class="form-input"
+                  id="input-company"
+                  name="company"
+                  type="text"
+                  placeholder="Company"
+                />
+
+                <label for="address" class="sr-only">Address</label>
+                <input
+                  class="form-input"
+                  id="input-address"
+                  name="address"
+                  type="text"
+                  placeholder="Address"
+                  data-validate
+                />
+
+                <label for="Apartment" class="sr-only">Apartment</label>
+                <input
+                  class="form-input"
+                  id="input-appartment"
+                  name="Apartment"
+                  type="text"
+                  placeholder="Apartment, suite, etc."
+                  data-validate
+                />
+
+                <label for="city" class="sr-only">City</label>
+                <input
+                  class="form-input"
+                  id="input-city"
+                  name="city"
+                  type="text"
+                  placeholder="City"
+                  data-validate
+                />
+
+                <label for="postcode" class="sr-only">Postcode</label>
+                <input
+                  class="form-input"
+                  id="input-postcode"
+                  name="postcode"
+                  type="text"
+                  placeholder="Postcode"
+                  data-validate
+                />
+
+                <label for="phone" class="sr-only">Phone</label>
+                <input
+                  class="form-input"
+                  id="input-phone"
+                  name="phone"
+                  type="tel"
+                  placeholder="Phone"
+                  data-validate
+                />
+              </div>
+            </fieldset>
+            <div class="payment__navigation">
+              <button class="form-btn-next" type="submit" disabled="true">
+                Continue to shiping
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="basket" id="basket">
+          <div class="basket__box">
+            <div class="basket__wrapper">
+              <h6 class="basket__title">Your Basket</h6>
+              <div class="basket__empty none">
+                Корзина пуста
+              </div>
+
+              <ul class="basket__list" id="basket-list"></ul>
+              <div class="gift">
+                <input
+                  class="gift__input"
+                  id="gift-input"
+                  type="text"
+                  name="gift"
+                  placeholder="Gift card or discount"
+                />
+                <button class="gift__submit" type="submit" id="search-submit">
+                  <img class="gift__img" src="@img/input_frog1.png" alt="" />
+                </button>
+              </div>
+              <div class="basket__info">
+                <div class="basket__price">
+                  <div class="discount">
+                    <p class="discount__title">discount</p>
+                    <p class="discount__value">30$</p>
+                  </div>
+                  <div class="shipping">
+                    <span class="shipping__title"> shipping </span>
+                    <span
+                      class="shipping-price__value"
+                      id="basket-shipping-price"
+                    >
+                      --
+                    </span>
+                  </div>
+                  <div class="total-price">
+                    <span class="total-price__title"> Total </span>
+                    <span class="total-price__value" id="basket-total-price">
+                      0$
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script defer src="js/form.min.js"></script>
+  </body>
+</html>

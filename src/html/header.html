@@ -1,0 +1,88 @@
+<header class="header">
+  <div class="header__container">
+    <a href="index.html" class="header__logo logo">
+      <img src="@img/header_logo.png" alt="">
+    </a>
+    <nav class="header__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="/index.html" class="menu__link">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="/shop.html" class="menu__link ">Shop</a>
+        </li>
+        <li class="menu__item">
+          <a href="/index.html#info" class="menu__link">About</a>
+        </li>
+      </ul>
+    </nav>
+      <div class="actions-header__search search "id="search">
+        <button class="search__button">
+          <svg class="svg-searchh-dims">
+            <use xlink:href="@img/sprite.svg#searchh"></use>
+          </svg>
+        </button>
+        <form class="search__form">
+          <input  class='search__input' id="search-input" type='text' name='search' placeholder='What are you looking for?'>
+          <button class="search__submit" type="button" id="search-submit">
+            <img class="search__img"  src="@img/input_frog1.png" alt="#">
+          </button>
+        </form>
+      </div>
+      <div class="actions-header__basket header-basket" id="header-basket">
+        <button type="button" class="header-basket__btn">
+          <svg class="svg-shopping-bag-dims">
+            <use xlink:href="@img/sprite.svg#shopping-bag"></use>
+          </svg>
+        </button>
+        <span class="header-basket__counter none">1</span>
+      </div>
+      <button type="button" class="actions-header__btn">Connect wallet</button>
+    
+    @@include('./icon-menu.html', {})
+    <div class="basket basket-fade " id="basket">
+      <div class="basket__box">
+        <div class="basket__wrapper">
+          <button class="basket__close-btn">
+            <svg class="svg-close-basket-dims">
+              <use xlink:href="@img/sprite.svg#close-basket"></use>
+            </svg>
+          </button>
+          <h6 class="basket__title">
+            Your Basket
+          </h6>
+          <div class="basket__empty">
+            Empty
+          </div>
+          <ul class="basket__list" id="basket-list">
+            
+          </ul>
+          <div class="basket__info none">
+            <div class="basket__price">
+              <div class="discount">
+                <p class="discount__title">
+                  discount
+                </p>
+                <p class="discount__value">
+                  30$
+                </p>
+              </div>
+              <div class="total-price">
+                <span class="total-price__title">
+                  Total
+                </span>
+                <span class="total-price__value" id="basket-total-price">
+                  0$
+                </span>
+              </div>
+            </div>
+            <a class="basket__btn" href="form-information.html" >chekout</a>
+            <p class="basket__policy">
+              By clicking the button I agree with the <a href="#">Privacy Policy</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>

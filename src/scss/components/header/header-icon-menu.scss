@@ -1,0 +1,59 @@
+.icon-menu {
+    display: none;
+  
+    @include media-mx(1024) {
+      display: block;
+      padding: 20px;
+      margin-left: 8px;
+      background-color: #fff;
+      border-radius: 50%;
+      position: relative;
+      width: rem(52);
+      height: rem(52);
+      cursor: pointer;
+  
+  
+      span,
+      &::before,
+      &::after {
+        content: '';
+        transition: all 300ms ease 0ms;
+  
+        left: 50%;
+        transform: translate(-50%, -50%);
+  
+        position: absolute;
+        width: rem(20);
+        height: rem(2);
+        background-color: #000;
+      }
+  
+      &::before {
+        top: 20px;
+      }
+  
+      &::after {
+        bottom: 20px;
+      }
+  
+      span {
+        top: calc(50% - rem(1));
+      }
+  
+      .menu-open & {
+        span {
+          width: 0;
+        }
+  
+        &::before {
+          top: calc(50% - rem(1));
+          transform: rotate(-45deg);
+        }
+  
+        &::after {
+          bottom: calc(50% - rem(1));
+          transform: rotate(45deg);
+        }
+      }
+    }
+  }

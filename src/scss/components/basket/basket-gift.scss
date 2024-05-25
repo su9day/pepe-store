@@ -1,0 +1,17 @@
+.gift{
+    @include searchStyles();
+      margin-top: 12px;
+      height: 52px;
+      max-width: 317px;
+    // .search__input
+    &__input {
+        padding-right: 74px;
+        padding-left: 20px;
+        width: 100%;
+    }
+  
+    &__submit {
+        opacity: 1;
+        display: block;
+    }
+  }

@@ -1,0 +1,11 @@
+.categories {
+    @include adaptiveClamp('margin-bottom', 50, 20);
+    &__wrapper {
+      display: flex;
+      gap: 20px;
+      @include media-mx(1024) {
+        flex-direction: column;
+        justify-content: space-between;
+      }
+    }
+  }

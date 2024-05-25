@@ -1,0 +1,40 @@
+.filter-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 8px;
+
+    }
+    &__item{
+        display: flex;
+        gap: 12px;
+        align-items: center;
+        background-color: #fff;
+        border-radius: 12px;
+        padding: 2px 2px 2px 16px;
+        text-transform: uppercase;
+        &-delete{
+            background-color: transparent;
+            width: 32px;
+            height: 32px;
+        }
+        svg{
+            background-color: #87E464;
+            border-radius: 10px;
+            width: 32px;
+            height: 32px;
+            padding: 4px;
+        }
+    }
+    &__clear{
+        margin-left: auto;
+        @include media-mx(463) {
+            margin-left: 0;
+          }
+    }
+}
