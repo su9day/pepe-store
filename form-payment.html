@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Payment</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240527210141">
+</head>
+
+  <body>
+    <section class="info payment">
+      <div class="payment__container">
+        <div class="payment__box">
+          <div class="payment__road road">
+            <ul class="road__list">
+              <li class="road__item road__item-completed">
+                <a href="cart.html">Cart</a>
+              </li>
+              <li class="road__item road__item-active">
+                <a href="form-information.html">Information</a>
+              </li>
+              <li class="road__item">
+                <a href="form-spawn.html">Spawn</a>
+              </li>
+              <li class="road__item">
+                <a href="form-payment.html">Payment</a>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="user-data" id="user-data">
+            <div class="user-data__box">
+              <span class="user-data__name"> Email </span>
+              <span class="user-data__value" data-user="email"> </span>
+              <a class="user-data__btn" href="form-information.html" data-form-btn-prev>Change</a>
+            </div>
+            <div class="user-data__box">
+              <span class="user-data__name"> Spawn to </span>
+              <span class="user-data__value" data-user="address"> </span>
+              <a class="user-data__btn" href="form-information.html" data-form-btn-prev>Change</a>
+            </div>
+            <div class="user-data__box">
+              <span class="user-data__name"> Method </span>
+              <span class="user-data__value" data-user="deliveryMethod"></span>
+              <a class="user-data__btn" href="form-spawn.html" data-form-btn-prev>Change</a>
+            </div>
+          </div>
+          <p class="payment__title">Address for replenishment</p>
+          <p class="payment__notice">
+            <svg class="svg-exclamation-octagon-dims">
+              <use xlink:href="images/sprite.svg#exclamation-octagon"></use>
+            </svg>
+            <span class="payment__notice-text">Payment takes place only in PNDC/PEPE</span>
+          </p>
+          <div class="payment__wallet wallet">
+            <div class="number wallet__number">
+              <div class="number-price number__price">
+                <span class="number-price__total"> 129$</span>
+                <span class="number-price__timer" id="timer"></span>
+              </div>
+              <div class="number-token number__token">
+                <div class="number-token__box">
+                  <span class="number-token__name"> $Pepe </span>
+                  <span class="number-token__code" data-wallet> 21097046,41350211 </span>
+                  <button class="number-token__copy" type="button" data-copy-btn>
+                    <svg class="svg-copy-dims">
+                      <use xlink:href="images/sprite.svg#copy"></use>
+                    </svg>
+                  </button>
+                </div>
+                <span class="number-token__decor"> or </span>
+                <div class="number-token__box">
+                  <span class="number-token__name"> $Pndc </span>
+                  <span class="number-token__code" type="button" data-wallet> 21097046,41350211 </span>
+                  <button class="number-token__copy" data-copy-btn>
+                    <svg class="svg-copy-dims">
+                      <use xlink:href="images/sprite.svg#copy"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="btc wallet__btc">
+                <p class="btc__code" data-wallet>
+                  0xa3660ab21938618d237db37adb03a1d503996012
+                </p>
+                <button class="btc__copy" type="button" data-copy-btn>
+                  <svg class="svg-copy-dims">
+                    <use xlink:href="images/sprite.svg#copy"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="wallet-qr wallet__qr">
+              <picture><source srcset="images/QR-Code.webp" type="image/webp"><img class="wallet-qr__img" src="images/QR-Code.jpeg" alt=""></picture>
+              <p class="wallet-qr__text">
+                This address accepts only ERC-20(Ethereum) network, transferring
+                here any other coin will result in fund loss.
+              </p>
+            </div>
+            <picture><source srcset="images.webpeg.webp" type="image/webp"><img class="wallet__decor" src="images/pngeg.png" alt=""></picture>
+          </div>
+          <div class="payment__navigation">
+            <a class="form-btn-prev" href="form-information.html" data-form-btn-prev>Back</a>
+          </div>
+        </div>
+        <div class="basket" id="basket">
+          <div class="basket__box">
+            <div class="basket__wrapper">
+              <h6 class="basket__title">Your Basket</h6>
+              <div class="basket__empty none">
+                Корзина пуста
+              </div>
+              <ul class="basket__list" id="basket-list"></ul>
+              <div class="gift">
+                <input class="gift__input" id="gift-input" type="text" name="gift" placeholder="Gift card or discount">
+                <button class="gift__submit" type="submit" id="search-submit">
+                  <picture><source srcset="images/input_frog1.webp" type="image/webp"><img class="gift__img" src="images/input_frog1.png" alt=""></picture>
+                </button>
+              </div>
+              <div class="basket__info">
+                <div class="basket__price">
+                  <div class="discount">
+                    <p class="discount__title">discount</p>
+                    <p class="discount__value">30$</p>
+                  </div>
+                  <div class="shipping">
+                    <span class="shipping__title"> shipping </span>
+                    <span class="shipping-price__value" id="basket-shipping-price">
+                      --
+                    </span>
+                  </div>
+                  <div class="total-price">
+                    <span class="total-price__title"> Total </span>
+                    <span class="total-price__value" id="basket-total-price">
+                      0$
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script defer="defer" src="js/form.min.js?_v=20240527210141"></script>
+  </body>
+</html>

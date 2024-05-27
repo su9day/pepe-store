@@ -1,0 +1,485 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Index</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240527210141">
+</head>
+
+  <body>
+    <header class="header">
+  <div class="header__container">
+    <a href="index.html" class="header__logo logo">
+      <picture><source srcset="images/header_logo.webp" type="image/webp"><img src="images/header_logo.png" alt=""></picture>
+    </a>
+    <nav class="header__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="/index.html" class="menu__link">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="/shop.html" class="menu__link">Shop</a>
+        </li>
+        <li class="menu__item">
+          <a href="/index.html#info" class="menu__link">About</a>
+        </li>
+      </ul>
+    </nav>
+      <div class="actions-header__search search" id="search">
+        <button class="search__button">
+          <svg class="svg-searchh-dims">
+            <use xlink:href="images/sprite.svg#searchh"></use>
+          </svg>
+        </button>
+        <form class="search__form">
+          <input class="search__input" id="search-input" type="text" name="search" placeholder="What are you looking for?">
+          <button class="search__submit" type="button" id="search-submit">
+            <picture><source srcset="images/input_frog1.webp" type="image/webp"><img class="search__img" src="images/input_frog1.png" alt="#"></picture>
+          </button>
+        </form>
+      </div>
+      <div class="actions-header__basket header-basket" id="header-basket">
+        <button type="button" class="header-basket__btn">
+          <svg class="svg-shopping-bag-dims">
+            <use xlink:href="images/sprite.svg#shopping-bag"></use>
+          </svg>
+        </button>
+        <span class="none header-basket__counter">1</span>
+      </div>
+      <button type="button" class="actions-header__btn">Connect wallet</button>
+    
+    <button class="header__burger icon-menu">
+  <span></span>
+</button>
+
+    <div class="basket basket-fade" id="basket">
+      <div class="basket__box">
+        <div class="basket__wrapper">
+          <button class="basket__close-btn">
+            <svg class="svg-close-basket-dims">
+              <use xlink:href="images/sprite.svg#close-basket"></use>
+            </svg>
+          </button>
+          <h6 class="basket__title">
+            Your Basket
+          </h6>
+          <div class="basket__empty">
+            Empty
+          </div>
+          <ul class="basket__list" id="basket-list">
+            
+          </ul>
+          <div class="none basket__info">
+            <div class="basket__price">
+              <div class="discount">
+                <p class="discount__title">
+                  discount
+                </p>
+                <p class="discount__value">
+                  30$
+                </p>
+              </div>
+              <div class="total-price">
+                <span class="total-price__title">
+                  Total
+                </span>
+                <span class="total-price__value" id="basket-total-price">
+                  0$
+                </span>
+              </div>
+            </div>
+            <a class="basket__btn" href="form-information.html">chekout</a>
+            <p class="basket__policy">
+              By clicking the button I agree with the <a href="#">Privacy Policy</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    <section class="top">
+    <div class="top__container">
+        <div class="top__img top__img-tshirt">
+            <picture><source srcset="images/tshirt.webp" type="image/webp"><img src="images/tshirt.png" alt=""></picture>
+        </div>
+        <div class="top__img top__img-cap">
+            <picture><source srcset="images/cap.webp" type="image/webp"><img src="images/cap.png" alt=""></picture>
+        </div>
+        <div class="top__img top__img-sublogo">
+            <picture><source srcset="images/sublogo.webp" type="image/webp"><img src="images/sublogo.png" alt=""></picture>
+        </div>
+        <div class="top__img top__img-logo">
+            <picture><source srcset="images/logo.webp" type="image/webp"><img src="images/logo.png" alt=""></picture>
+        </div>
+        <div class="top__img top__img-cow">
+            <picture><source srcset="images/cow.webp" type="image/webp"><img src="images/cow.png" alt=""></picture>
+        </div>
+        <div class="top__img top__img-frog">
+            <picture><source srcset="images/frog.webp" type="image/webp"><img src="images/frog.png" alt=""></picture>
+        </div>
+        <a href="../shop.html" class="shop-now-btn top__btn">
+            <picture><source srcset="images/btn_tshirt.webp" type="image/webp"><img class="shop-now-btn__tshirt top__btn-tshirt" src="images/btn_tshirt.png" alt=""></picture>
+            <picture><source srcset="images/btn_cap.webp" type="image/webp"><img class="shop-now-btn__cap top__btn-cap" src="images/btn_cap.png" alt=""></picture>
+            Shop now
+        </a>
+    </div>
+</section>
+    <section class="slider">
+    <div class="swiper slider__container">
+            <nav class="slider__navigation">
+                <div class="slider__title">
+                    featured item 
+                </div>
+                <div class="spoiler slider-spoiler" data-spoiler>
+                    <div class="spoiler__header slider-spoiler__header">
+                        <p>ALL</p>
+                        <svg class="svg-angle-down-dims">
+                            <use xlink:href="images/sprite.svg#angle-down"></use>
+                        </svg>
+                    </div>
+                    <div class="spoiler__body slider-spoiler__body">
+                        <button type="button" class="spoiler-item spoiler__btn-cap" data-category="all">
+                            all
+                        </button>
+                        <button type="button" class="spoiler-item spoiler__btn-cap" data-category="cap">
+                            Cap
+                        </button>
+                        <button type="button" class="spoiler-item spoiler__btn-tShirts" data-category="t-shirt">
+                            T Shirts
+                        </button>
+                    </div>
+                  </div>
+                
+                <div class="slider-button__wrapper">
+                    <div class="slider__btn swiper-button-prev">
+                        <svg class="svg-angle-left-dims">
+                            <use xlink:href="images/sprite.svg#angle-left"></use>
+                        </svg>
+                    </div>
+                    <div class="slider__btn swiper-button-next">
+                        <svg class="svg-angle-right-dims">
+                            <use xlink:href="images/sprite.svg#angle-right"></use>
+                        </svg>
+                    </div>
+                </div>
+            </nav>
+        
+            <div class="slider__wrapper swiper-wrapper" id="swiper-wrapper_featured">
+            
+            </div>
+        </div>
+        
+        
+        
+
+
+    
+    
+</section>
+    <section class="slider guide" id="guide">
+    
+    <div class="swiper guide__container">
+            <div class="slider__navigation">
+                <div class="slider__title">
+                    how to buy 
+                </div>
+                
+                <div class="slider-button__wrapper">
+                    <div class="slider__btn swiper-button-prev">
+                        <svg class="svg-angle-left-dims">
+                            <use xlink:href="images/sprite.svg#angle-left"></use>
+                        </svg>
+                    </div>
+                    <div class="slider__btn swiper-button-next">
+                        <svg class="svg-angle-right-dims">
+                            <use xlink:href="images/sprite.svg#angle-right"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__wrapper swiper-wrapper">
+                <div class="slider__item swiper-slide">
+                    <div class="guide-cart">
+                     <div class="guide-cart__wrapper">
+                         <picture><source srcset="images/guide1.webp" type="image/webp"><img class="guide-cart__img" src="images/guide1.png" alt=""></picture>
+                         <h6 class="guide-cart__title">Select product</h6>
+                     </div>
+                    </div>
+                 </div>
+                <div class="slider__item swiper-slide">
+                   <div class="guide-cart">
+                    <div class="guide-cart__wrapper">
+                        <picture><source srcset="images/guide2.webp" type="image/webp"><img class="guide-cart__img" src="images/guide2.png" alt=""></picture>
+                        <h6 class="guide-cart__title">Add to cart</h6>
+                    </div>
+                   </div>
+                </div>
+                <div class="slider__item swiper-slide">
+                    <div class="guide-cart">
+                     <div class="guide-cart__wrapper">
+                         <picture><source srcset="images/guide3.webp" type="image/webp"><img class="guide-cart__img" src="images/guide3.png" alt=""></picture>
+                         <h6 class="guide-cart__title">Checkout</h6>
+                     </div>
+                    </div>
+                 </div>
+                 <div class="slider__item swiper-slide">
+                    <div class="guide-cart">
+                     <div class="guide-cart__wrapper">
+                         <picture><source srcset="images/guide4.webp" type="image/webp"><img class="guide-cart__img" src="images/guide4.png" alt=""></picture>
+                         <h6 class="guide-cart__title">Payment</h6>
+                     </div>
+                    </div>
+                 </div>
+                 <div class="slider__item swiper-slide">
+                    <div class="guide-cart">
+                     <div class="guide-cart__wrapper">
+                         <picture><source srcset="images/guide5.webp" type="image/webp"><img class="guide-cart__img" src="images/guide5.png" alt=""></picture>
+                         <h6 class="guide-cart__title">SPAWN</h6>
+                     </div>
+                    </div>
+                 </div>
+                 <div class="slider__item swiper-slide">
+                    <div class="guide-cart">
+                     <div class="guide-cart__wrapper guide-cart__wrapper-shop">
+                        <picture><source srcset="images/guide6.webp" type="image/webp"><img class="guide-cart__img-shop" src="images/guide6.png" alt=""></picture>
+                        <a href="../shop.html" class="shop-now-btn guide-cart__btn">
+                            <picture><source srcset="images/btn_tshirt.webp" type="image/webp"><img class="shop-now-btn__tshirt guide-cart__btn-tshirt" src="images/btn_tshirt.png" alt=""></picture>
+                            <picture><source srcset="images/btn_cap.webp" type="image/webp"><img class="shop-now-btn__cap guide-cart__btn-cap" src="images/btn_cap.png" alt=""></picture>
+                            Shop now
+                        </a>
+                     </div>
+                    </div>
+                 </div>
+            </div> 
+        </div>
+    
+</section>
+    <div class="info" id="info">
+  <div class="info__container">
+    <div class="info__wrapper">
+      <div class="info__box-img">
+        <img class="info__img about__img" src="images/about_img-1024.png" alt="">
+      </div>
+      <div class="description">
+        <div class="description__wrapper">
+          <h3 class="description__title">
+            About
+            <span>CopeNothing</span>
+          </h3>
+          <p class="description__text">
+            Are you ready for COPE? Our team has worked hard to create a uniq
+            merch for pepe & pndc holders. All our products are manufactured
+            using the most modern technologies and high-quality materials. They
+            are not only stylish and unique, but also comfortable to use. We
+            strive to provide our customers with a high level of satisfaction
+            and joy from shopping.
+          </p>
+          <a class="description__link" href="#">
+            <svg class="svg-twiter-dims">
+              <use xlink:href="images/sprite.svg#twiter"></use>
+            </svg>
+            twitter
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <section class="news">
+    
+    
+    <div class="swiper news__container">
+            <div class="slider__navigation">
+                <div class="slider__title">
+                    news drop
+                </div>
+                <div class="spoiler slider-spoiler" data-spoiler>
+                    <div class="spoiler__header slider-spoiler__header">
+                        <p>ALL</p>
+                      
+                        <svg class="svg-angle-down-dims">
+                            <use xlink:href="images/sprite.svg#angle-down"></use>
+                        </svg>
+                    </div>
+                    <div class="spoiler__body slider-spoiler__body">
+                        <button type="button" class="spoiler-item spoiler__btn-cap" data-category="all">
+                            all
+                        </button>
+                        <button type="button" class="spoiler-item spoiler__btn-cap" data-category="cap">
+                            Cap
+                        </button>
+                        <button type="button" class="spoiler-item spoiler__btn-tShirts" data-category="t-shirt">
+                            T Shirts
+                        </button>
+                    </div>
+                  </div>
+                <div class="slider-button__wrapper">
+                    <div class="slider__btn swiper-button-prev">
+                        <svg class="svg-angle-left-dims">
+                            <use xlink:href="images/sprite.svg#angle-left"></use>
+                        </svg>
+                    </div>
+                    <div class="slider__btn swiper-button-next">
+                        <svg class="svg-angle-right-dims">
+                            <use xlink:href="images/sprite.svg#angle-right"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="slider__wrapper swiper-wrapper" id="swiper-wrapper_news">
+              
+            </div>
+        </div>
+    
+</section>
+    <div class="tokens" id="tokens">
+  <div class="tokens__container">
+    <div class="info">
+      <div class="info__wrapper">
+        <div class="info__box-img">
+          <picture><source srcset="images/token_1.webp" type="image/webp"><img class="info__img" src="images/token_1.png" alt=""></picture>
+        </div>
+        <div class="description">
+          <div class="description__wrapper">
+            <h3 class="description__title">
+              TOken
+              <span>$PNDC</span>
+            </h3>
+            <p class="description__text">
+              PNDC it's a token drived by early adopters of PEPE which according
+              to the Pauly0x (founder) will change the game once and for all!
+            </p>
+            <div class="spoiler token-spoiler" data-spoiler>
+              <div class="spoiler__header token-spoiler__header">
+                <p>token contract</p>
+                <svg class="svg-angle-down-dims">
+                  <use xlink:href="images/sprite.svg#angle-down"></use>
+                </svg>
+              </div>
+              <div class="spoiler__body token-spoiler__body">
+              <a href="#" class="spoiler-item">link</a>
+              <a href="#" class="spoiler-item">link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+       <div class="info">
+      <div class="info__wrapper info__wrapper_reverse">
+        <div class="info__box-img">
+          <picture><source srcset="images/token_2.webp" type="image/webp"><img class="info__img token__img" src="images/token_2.png" alt=""></picture>
+        </div>
+
+        <div class="description">
+          <div class="description__wrapper">
+            <h3 class="description__title">
+              TOken
+              <span>$PEPE</span>
+            </h3>
+            <p class="description__text">
+                PEPE is a deflationary memecoin launched on Ethereum. The cryptocurrency was created as a tribute to the Pepe the Frog internet meme, created by Matt Furie, which gained popularity in the early 2000s.
+            </p>
+            <div class="spoiler token-spoiler" data-spoiler>
+              <div class="spoiler__header token-spoiler__header">
+                <p>token contract</p>
+
+                <svg class="svg-angle-down-dims">
+                  <use xlink:href="images/sprite.svg#angle-down"></use>
+                </svg>
+              </div>
+              <div class="spoiler__body token-spoiler__body">
+              <a href="#" class="spoiler-item">link</a>
+              <a href="#" class="spoiler-item">link</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <section class="categories">
+  <div class="categories__container">
+    <div class="categories__wrapper">
+      <div class="categories__cart category-cart" data-category="cap">
+        <div class="img_box">
+          <picture><source srcset="images/card_cap.webp" type="image/webp"><img class="category-cart__img" src="images/card_cap.png" alt=""></picture>
+        </div>
+        <div class="category-cart__info">
+          <h6 class="category-cart__info-title">caps</h6>
+          <a class="category-cart__info-link" href="#">
+            <svg class="svg-angle-right-dims">
+              <use xlink:href="images/sprite.svg#angle-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="categories__cart category-cart" data-category="t-shirt">
+        <div class="img_box">
+          <picture><source srcset="images/t-shirt.webp" type="image/webp"><img class="category-cart__img" src="images/t-shirt.png" alt=""></picture>
+        </div>
+        <div class="category-cart__info">
+          <h6 class="category-cart__info-title">T shirts</h6>
+          <a class="category-cart__info-link" href="#">
+            <svg class="svg-angle-right-dims">
+              <use xlink:href="images/sprite.svg#angle-right"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__wrapper">
+      <div class="footer-img footer__img">
+        <p>Not only stylish and unique, but also comfortable</p>
+      </div>
+      <div class="footer__menu menu-footer">
+        <ul class="menu-footer__list">
+          <li class="menu-footer__item">
+            <a href="../shop.html" class="menu-footer__link">shop</a>
+          </li>
+          <li class="menu-footer__item">
+            <a href="../index.html#info" class="menu-footer__link">CopeNothing</a>
+          </li>
+          <li class="menu-footer__item">
+            <a href="../index.html#guide" class="menu-footer__link">How to buy</a>
+          </li>
+          <li class="menu-footer__item">
+            <a href="../index.html#tokens" class="menu-footer__link">Tokens</a>
+          </li>
+        </ul>
+        <div class="footer-contact menu-footer__contact">
+          <p class="footer-contact__text">
+            Are there any issues with the delivery or payment confirmation?
+          </p>
+          <a class="footer-contact__link" href="#"> contact support </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-policy footer__policy">
+      <p class="footer-policy__rights">
+        Copyright 2023 CopeNothing. All rights reserved
+      </p>
+      <a class="footer-policy__service" href="#">Terms of service</a>
+      <a class="footer-policy__policy" href="#">Privacy policy</a>
+    </div>
+  </div>
+</footer>
+
+    
+
+    <script defer="defer" src="js/index.min.js?_v=20240527210141"></script>
+  </body>
+</html>
+

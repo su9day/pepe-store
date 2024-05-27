@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Shop</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240527210141">
+</head>
+
+<body>
+    <header class="header">
+  <div class="header__container">
+    <a href="index.html" class="header__logo logo">
+      <picture><source srcset="images/header_logo.webp" type="image/webp"><img src="images/header_logo.png" alt=""></picture>
+    </a>
+    <nav class="header__menu menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="/index.html" class="menu__link">Home</a>
+        </li>
+        <li class="menu__item">
+          <a href="/shop.html" class="menu__link">Shop</a>
+        </li>
+        <li class="menu__item">
+          <a href="/index.html#info" class="menu__link">About</a>
+        </li>
+      </ul>
+    </nav>
+      <div class="search actions-header__search" id="search">
+        <button class="search__button">
+          <svg class="svg-searchh-dims">
+            <use xlink:href="images/sprite.svg#searchh"></use>
+          </svg>
+        </button>
+        <form class="search__form">
+          <input class="search__input" id="search-input" type="text" name="search" placeholder="What are you looking for?">
+          <button class="search__submit" type="button" id="search-submit">
+            <picture><source srcset="images/input_frog1.webp" type="image/webp"><img class="search__img" src="images/input_frog1.png" alt="#"></picture>
+          </button>
+        </form>
+      </div>
+      <div class="actions-header__basket header-basket" id="header-basket">
+        <button type="button" class="header-basket__btn">
+          <svg class="svg-shopping-bag-dims">
+            <use xlink:href="images/sprite.svg#shopping-bag"></use>
+          </svg>
+        </button>
+        <span class="none header-basket__counter">1</span>
+      </div>
+      <button type="button" class="actions-header__btn">Connect wallet</button>
+    
+    <button class="header__burger icon-menu">
+  <span></span>
+</button>
+
+    <div class="basket basket-fade" id="basket">
+      <div class="basket__box">
+        <div class="basket__wrapper">
+          <button class="basket__close-btn">
+            <svg class="svg-close-basket-dims">
+              <use xlink:href="images/sprite.svg#close-basket"></use>
+            </svg>
+          </button>
+          <h6 class="basket__title">
+            Your Basket
+          </h6>
+          <div class="basket__empty">
+            Empty
+          </div>
+          <ul class="basket__list" id="basket-list">
+            
+          </ul>
+          <div class="none basket__info">
+            <div class="basket__price">
+              <div class="discount">
+                <p class="discount__title">
+                  discount
+                </p>
+                <p class="discount__value">
+                  30$
+                </p>
+              </div>
+              <div class="total-price">
+                <span class="total-price__title">
+                  Total
+                </span>
+                <span class="total-price__value" id="basket-total-price">
+                  0$
+                </span>
+              </div>
+            </div>
+            <a class="basket__btn" href="form-information.html">chekout</a>
+            <p class="basket__policy">
+              By clicking the button I agree with the <a href="#">Privacy Policy</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+    <section class="shop">
+        <div class="shop__container">
+            <picture><source srcset="images/shoplogo.webp" type="image/webp"><img class="shop__logo" src="images/shoplogo.png" alt=""></picture>
+            <div class="shop-nav shop__navigation" id="shop-nav">
+                <div class="search shop-nav__search">
+                    <button class="search__button">
+                      <svg class="svg-searchh-dims">
+                        <use xlink:href="images/sprite.svg#searchh"></use>
+                      </svg>
+                    </button>
+                    <form class="search__form">
+                      <input class="search__input search__input-active" id="shop-search-input" type="text" name="search" placeholder="What are you looking for?">
+                      <button class="search__submit search__submit-active" type="submit" id="search-submit">
+                        <picture><source srcset="images/input_frog1.webp" type="image/webp"><img class="search__img" src="images/input_frog1.png" alt="#"></picture>
+                      </button>
+                    </form>
+                </div>
+                <div class="shop-nav__box">
+                    <button class="shop-nav__btn" type="button" id="filter-menu-btn" data-type="popup">
+                        <svg class="svg-filter-dims" data-type="popup">
+                            <use xlink:href="images/sprite.svg#filter"></use>
+                        </svg>
+                    </button>
+                    
+                    <button class="shop-nav__item" type="button" id="filter-price">
+                        <svg class="none svg-arrow-down-dims">
+                            <use xlink:href="images/sprite.svg#arrow-down"></use>
+                        </svg>
+                        price
+                    </button>
+                    <button class="shop-nav__item" type="button" id="filter-popular">
+                        <svg class="none svg-arrow-down-dims">
+                            <use xlink:href="images/sprite.svg#arrow-down"></use>
+                        </svg>
+                        popular
+                    </button>
+                </div>
+            </div>
+            <ul class="filter-list shop__filters-list" id="filter-list">
+                <div class="filter-list__wrapper" id="filter-list-wrapper">
+                    
+                </div>
+                <button class="filter-list__clear filter-list__item" type="button" data-filter-clear>
+                    Clear
+                    <svg class="svg-trash-alt-dims">
+                        <use xlink:href="images/sprite.svg#trash-alt"></use>
+                    </svg>
+                </button>
+            </ul>
+            <ul class="shop__list" id="shop-list">
+                
+            </ul>
+            <div class="popup" data-popup="popup" data-close-overlay>
+                <div class="popup__wrapper">
+                    <div class="popup__content">
+                        <div class="filter-box" id="filter-box"> 
+                            <span class="filter-box__title">Filter</span>
+                            <svg class="button-close filter-box__close svg-close-basket-dims">
+                                <use xlink:href="images/sprite.svg#close-basket"></use>
+                            </svg>
+                            <div class="filter-type">
+                                <span>type</span>
+                                
+                                <div class="filter-type__wrapper">
+                                    <input class="filter-type__input" type="checkbox" name="type" value="cap" id="type-cap">
+                                    <label for="type-cap">
+                                        cap
+                                    </label>
+                                    <input class="filter-type__input" type="checkbox" name="type" value="t-shirt" id="type-t-shirt">
+                                    <label for="type-t-shirt">
+                                        t-shirt
+                                    </label>
+                                    <input class="filter-type__input" type="checkbox" name="type" value="boots" id="type-boots">
+                                    <label for="type-boots">
+                                        boots
+                                    </label>
+                                    <input class="filter-type__input" type="checkbox" name="type" value="socks" id="type-socks">
+                                    <label for="type-socks">
+                                        socks
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter-size">
+                                <span>select size</span>
+                                <div class="filter-size__wrapper">
+                                    <input class="filter-size__input" type="checkbox" name="size" value="s" id="size-s">
+                                    <label for="size-s">
+                                        S
+                                    </label>
+                                    <input class="filter-size__input" type="checkbox" name="size" value="m" id="size-m">
+                                    <label for="size-m">
+                                        M
+                                    </label>
+                                    <input class="filter-size__input" type="checkbox" name="size" value="l" id="size-l">
+                                    <label for="size-l">
+                                        L
+                                    </label>
+                                    <input class="filter-size__input" type="checkbox" name="size" value="xl" id="size-xl">
+                                    <label for="size-xl">
+                                        XL
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter-color">
+                                <span>select color</span>
+                                <div class="filter-color__wrapper">
+                                    <input class="filter-color__input" type="checkbox" name="color" value="blue" id="color-blue">
+                                    <label class="color__blue" for="color-blue">
+                                    </label>
+                                    <input class="filter-color__input" type="checkbox" name="color" value="red" id="color-red">
+                                    <label class="color__red" for="color-red">
+                                    </label>
+                                    <input class="filter-color__input" type="checkbox" name="color" value="green" id="color-green">
+                                    <label class="color__green" for="color-green">
+                                    </label>
+                                    <input class="filter-color__input" type="checkbox" name="color" value="white" id="color-white">
+                                    <label class="color__white" for="color-white">
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="filter-actions">
+                                <button class="button-close filter-actions__clear" type="button" data-filter-clear>
+                                    clear filters
+                                </button>
+                                <button class="button-close filter-actions__apply" type="button" id="apply-btn">
+                                    apply
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+    </section>
+    <footer class="footer">
+  <div class="footer__container">
+    <div class="footer__wrapper">
+      <div class="footer-img footer__img">
+        <p>Not only stylish and unique, but also comfortable</p>
+      </div>
+      <div class="footer__menu menu-footer">
+        <ul class="menu-footer__list">
+          <li class="menu-footer__item">
+            <a href="../shop.html" class="menu-footer__link">shop</a>
+          </li>
+          <li class="menu-footer__item">
+            <a href="../index.html#info" class="menu-footer__link">CopeNothing</a>
+          </li>
+          <li class="menu-footer__item">
+            <a href="../index.html#guide" class="menu-footer__link">How to buy</a>
+          </li>
+          <li class="menu-footer__item">
+            <a href="../index.html#tokens" class="menu-footer__link">Tokens</a>
+          </li>
+        </ul>
+        <div class="footer-contact menu-footer__contact">
+          <p class="footer-contact__text">
+            Are there any issues with the delivery or payment confirmation?
+          </p>
+          <a class="footer-contact__link" href="#"> contact support </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-policy footer__policy">
+      <p class="footer-policy__rights">
+        Copyright 2023 CopeNothing. All rights reserved
+      </p>
+      <a class="footer-policy__service" href="#">Terms of service</a>
+      <a class="footer-policy__policy" href="#">Privacy policy</a>
+    </div>
+  </div>
+</footer>
+
+    <script defer="defer" src="js/shop.min.js?_v=20240527210141"></script>
+</body>
+</html>
