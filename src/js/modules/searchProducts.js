@@ -21,7 +21,7 @@ searchsubmitBtn.addEventListener('click', (e) => {
   window.location.href = shopSearchUrl;
 });
 document.addEventListener('DOMContentLoaded', () => {
-  if (window.location.pathname === '/shop.html') {
+  if (window.location.pathname === '/pepe-store/shop.html') {
     const searchUrl = new URLSearchParams(window.location.search);
     if (searchUrl.get('search')) {
       searchParamsArr = searchUrl.get('search').split(' ');
