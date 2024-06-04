@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Index</title>
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/main.min.css?_v=20240527210141">
+  <link rel="stylesheet" href="css/main.min.css?_v=20240604133253">
 </head>
 
   <body>
@@ -18,13 +18,13 @@
     <nav class="header__menu menu">
       <ul class="menu__list">
         <li class="menu__item">
-          <a href="/index.html" class="menu__link">Home</a>
+          <a href="index.html" class="menu__link">Home</a>
         </li>
         <li class="menu__item">
-          <a href="/shop.html" class="menu__link">Shop</a>
+          <a href="shop.html" class="menu__link">Shop</a>
         </li>
         <li class="menu__item">
-          <a href="/index.html#info" class="menu__link">About</a>
+          <a href="index.html#info" class="menu__link">About</a>
         </li>
       </ul>
     </nav>
@@ -121,7 +121,7 @@
         <div class="top__img top__img-frog">
             <picture><source srcset="images/frog.webp" type="image/webp"><img src="images/frog.png" alt=""></picture>
         </div>
-        <a href="../shop.html" class="shop-now-btn top__btn">
+        <a href="./shop.html" class="shop-now-btn top__btn">
             <picture><source srcset="images/btn_tshirt.webp" type="image/webp"><img class="shop-now-btn__tshirt top__btn-tshirt" src="images/btn_tshirt.png" alt=""></picture>
             <picture><source srcset="images/btn_cap.webp" type="image/webp"><img class="shop-now-btn__cap top__btn-cap" src="images/btn_cap.png" alt=""></picture>
             Shop now
@@ -129,10 +129,11 @@
     </div>
 </section>
     <section class="slider">
-    <div class="swiper slider__container">
-            <nav class="slider__navigation">
+    <div id="featured" class="swiper slider__container">
+            <div class="slider__navigation">
                 <div class="slider__title">
-                    featured item 
+                    featured item  
+                    
                 </div>
                 <div class="spoiler slider-spoiler" data-spoiler>
                     <div class="spoiler__header slider-spoiler__header">
@@ -153,7 +154,6 @@
                         </button>
                     </div>
                   </div>
-                
                 <div class="slider-button__wrapper">
                     <div class="slider__btn swiper-button-prev">
                         <svg class="svg-angle-left-dims">
@@ -166,18 +166,11 @@
                         </svg>
                     </div>
                 </div>
-            </nav>
-        
-            <div class="slider__wrapper swiper-wrapper" id="swiper-wrapper_featured">
-            
+            </div>
+            <div class="slider__wrapper swiper-wrapper swiper-wrapper_featured" id="swiper-wrapper_featured">
+              
             </div>
         </div>
-        
-        
-        
-
-
-    
     
 </section>
     <section class="slider guide" id="guide">
@@ -187,7 +180,6 @@
                 <div class="slider__title">
                     how to buy 
                 </div>
-                
                 <div class="slider-button__wrapper">
                     <div class="slider__btn swiper-button-prev">
                         <svg class="svg-angle-left-dims">
@@ -246,7 +238,7 @@
                     <div class="guide-cart">
                      <div class="guide-cart__wrapper guide-cart__wrapper-shop">
                         <picture><source srcset="images/guide6.webp" type="image/webp"><img class="guide-cart__img-shop" src="images/guide6.png" alt=""></picture>
-                        <a href="../shop.html" class="shop-now-btn guide-cart__btn">
+                        <a href="./shop.html" class="shop-now-btn guide-cart__btn">
                             <picture><source srcset="images/btn_tshirt.webp" type="image/webp"><img class="shop-now-btn__tshirt guide-cart__btn-tshirt" src="images/btn_tshirt.png" alt=""></picture>
                             <picture><source srcset="images/btn_cap.webp" type="image/webp"><img class="shop-now-btn__cap guide-cart__btn-cap" src="images/btn_cap.png" alt=""></picture>
                             Shop now
@@ -290,18 +282,16 @@
   </div>
 </div>
 
-    <section class="news">
-    
-    
-    <div class="swiper news__container">
+    <section class="slider">
+    <div id="news" class="swiper slider__container">
             <div class="slider__navigation">
                 <div class="slider__title">
-                    news drop
+                    news drop 
+                    
                 </div>
                 <div class="spoiler slider-spoiler" data-spoiler>
                     <div class="spoiler__header slider-spoiler__header">
                         <p>ALL</p>
-                      
                         <svg class="svg-angle-down-dims">
                             <use xlink:href="images/sprite.svg#angle-down"></use>
                         </svg>
@@ -331,7 +321,7 @@
                     </div>
                 </div>
             </div>
-            <div class="slider__wrapper swiper-wrapper" id="swiper-wrapper_news">
+            <div class="slider__wrapper swiper-wrapper swiper-wrapper_news" id="swiper-wrapper_news">
               
             </div>
         </div>
@@ -447,16 +437,16 @@
       <div class="footer__menu menu-footer">
         <ul class="menu-footer__list">
           <li class="menu-footer__item">
-            <a href="../shop.html" class="menu-footer__link">shop</a>
+            <a href="./shop.html" class="menu-footer__link">shop</a>
           </li>
           <li class="menu-footer__item">
-            <a href="../index.html#info" class="menu-footer__link">CopeNothing</a>
+            <a href="./index.html#info" class="menu-footer__link">CopeNothing</a>
           </li>
           <li class="menu-footer__item">
-            <a href="../index.html#guide" class="menu-footer__link">How to buy</a>
+            <a href="./index.html#guide" class="menu-footer__link">How to buy</a>
           </li>
           <li class="menu-footer__item">
-            <a href="../index.html#tokens" class="menu-footer__link">Tokens</a>
+            <a href="./index.html#tokens" class="menu-footer__link">Tokens</a>
           </li>
         </ul>
         <div class="footer-contact menu-footer__contact">
@@ -479,7 +469,7 @@
 
     
 
-    <script defer="defer" src="js/index.min.js?_v=20240527210141"></script>
+    <script defer="defer" src="js/index.min.js?_v=20240604133253"></script>
   </body>
 </html>
 
