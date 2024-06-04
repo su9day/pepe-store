@@ -55,9 +55,9 @@ document.addEventListener('DOMContentLoaded', function() {
         
       },
     });
-    const alsoLike = new Swiper('#also-like',swiperSettings)
-
+    
   });
+  export const alsoLike = new Swiper('#also-like',swiperSettings)
 
   new Accordion('.accordion', {
     shouldOpenAll: false, // true

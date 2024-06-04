@@ -17,7 +17,7 @@ searchsubmitBtn.addEventListener('click', (e) => {
   const searchParamsValue = searchBox.querySelector('.search__input').value;
   const searchUrl = new URLSearchParams(window.location.search);
   searchUrl.set('search', searchParamsValue);
-  const shopSearchUrl = '/shop.html?' + searchUrl.toString();
+  const shopSearchUrl = 'shop.html?' + searchUrl.toString();
   window.location.href = shopSearchUrl;
 });
 document.addEventListener('DOMContentLoaded', () => {
