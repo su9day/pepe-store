@@ -3,15 +3,6 @@ import BaseHelpers from './helpers/base-helpers';
 import PopupManager from './modules/popup-manager';
 import BurgerMenu from './modules/burger-menu';
 
-import './modules/header.js';
-import './modules/basket/basketActions.js';
-import './modules/card/addUniqueIds';
-import './modules/card/cartActions';
-import './modules/spoiler.js';
-import './modules/swiper-filter.js';
-import './modules/form-scripts.js';
-import './modules/sortCards.js'
-
 
 BaseHelpers.checkWebpSupport();
 
@@ -47,7 +38,7 @@ new BurgerMenu().init();
  * Параллакс мышей
  * */
 // new MousePRLX();
-const swiperSettings = {
+export const swiperSettings = {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -68,8 +59,8 @@ const swiperSettings = {
     },
   },
 }
-export const ItemSwiper = new Swiper('.slider__container', swiperSettings);
-export const NewsSwiper = new Swiper('.news__container', swiperSettings);
+export const ItemSwiper = new Swiper('#featured', swiperSettings);
+export const NewsSwiper = new Swiper('#news', swiperSettings);
 export const swiperGuide = new Swiper('.guide__container', {
   navigation: {
     nextEl: '.swiper-button-next',
@@ -92,5 +83,23 @@ export const swiperGuide = new Swiper('.guide__container', {
     400: {
       slidesPerView: 2,
     },
+  },
+});
+
+const productSwiper = new Swiper('.product__slider', {
+  slidesPerView: 1,
+  thumbs: {
+    swiper: {
+      el: '.product-slider-mini__wrapper',
+      slidesPerView: 4,
+    }
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
   },
 });

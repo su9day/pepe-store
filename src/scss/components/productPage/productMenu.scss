@@ -1,0 +1,113 @@
+.product {
+
+    // .product__menu
+
+    &__menu {
+    }
+    
+}
+.product-menu {
+    grid-row: 1/-1;
+    max-width: 760px;
+    // .product-menu__wrapper
+
+    &__wrapper {
+       
+        padding: 52px 44px 44px 44px;
+        border-radius: 50px;
+        background: rgb(255, 255, 255);
+    }
+
+    // .product-menu__name
+
+    &__name {
+        font-size: 40px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+        @include media-mx(1024) {
+            font-size: 30px;
+        
+        }
+        
+    }
+
+    // .product-menu__price
+
+    &__price {
+        display: inline-block;
+        font-size: 24px;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+}
+.product-size {
+    margin-bottom: 52px;
+    &__title{
+        font-size: 20px;
+        line-height: 24px;
+        margin-bottom: 22px;
+    }
+}
+
+
+.product-color {
+    &__title{
+        margin-bottom: 16px;
+        text-transform: uppercase;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+.product-actions {
+    margin-bottom: 52px;
+    &__title{
+        display: inline-block;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+
+    }
+    &__wrapper{
+        display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 60px;
+    max-width: 300px;
+    border-radius: 150px;
+    background: rgb(245, 245, 245);
+    padding: 6px;
+    }
+    // .product-actions__control
+    &__current{
+        font-size: 20px;
+        line-height: 24;
+    }
+    &__control {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 48px;
+        height: 48px;
+        background: rgb(135, 228, 100);
+        border-radius: 50%;
+        font-size: 24px;
+        cursor: pointer;
+        
+    }
+}
+.product-add-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    line-height: 24px;
+    width: 100%;
+    padding: 20px 40px;
+    border-radius: 150px;
+    background-color: #87E464;
+    text-transform: uppercase;
+    margin-bottom: 36px;
+}
+

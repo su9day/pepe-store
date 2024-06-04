@@ -1,6 +1,7 @@
 import { toggleBasketStatus } from "../basket/toggleBasketStatus";
 import { calcBasketPrice } from "../basket/calcBasketPrice";
 export const addToBasket = (currentCart) => {
+    
     const colorLable = currentCart.querySelector('.product-cart__color');
     const classes = colorLable.classList;
     let colorClass = '';
@@ -11,13 +12,17 @@ export const addToBasket = (currentCart) => {
       }
     });
     const productInfo = {
-      category: currentCart.getAttribute('data-category'),
+      
       img: currentCart.querySelector('img').getAttribute('src'),
       title: currentCart.querySelector('.product-cart__title').innerText,
       price: currentCart.querySelector('.product-cart__price').innerText,
       size: currentCart.querySelector('.product-cart__size').textContent,
       color: colorClass,
     };
+
+
+
+
     const basketList = document.querySelector('.basket__list');
     let basketElem = `
      <li class="basket__item basket-item" data-category='${productInfo.category}'>

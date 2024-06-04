@@ -11,7 +11,7 @@ export function createElements(obj, wrapper) {
                                   <div class="product-cart__mark product-cart__mark-counter">
                                       <span>${obj[key].quantity.rest}/${obj[key].quantity.total}</span>
                                   </div>
-                                  <img class="product-cart__img" src="${obj[key].img}" alt="${obj[key].name}">
+                                  <img class="product-cart__img" src="${obj[key].img[0]}" alt="${obj[key].name}">
                                   <div class="product-cart__details">
                                       <div class="product-cart__info">
                                           <h3 class="product-cart__title">${obj[key].name}</h3>

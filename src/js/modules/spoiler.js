@@ -14,7 +14,8 @@ window.addEventListener('click', (e) => {
   }
   if (spoilerItem) {
     const itemCategory = spoilerItem.getAttribute('data-category');
-    const newsContainer = e.target.closest('.news__container');
+    const newsContainer = e.target.closest('#news');
+    console.log(newsContainer)
     if (newsContainer) {
       filterSwiper(NewsSwiper, itemCategory);
     } else {

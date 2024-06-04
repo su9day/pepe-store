@@ -11,7 +11,7 @@ import './modules/spoiler.js';
 import './modules/swiper-filter.js';
 import './modules/categories.js';
 import './modules/searchProducts.js'
-
+import './modules/productPage/renderProductPage.js'
 
 
 BaseHelpers.checkWebpSupport();

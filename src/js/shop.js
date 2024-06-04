@@ -14,6 +14,8 @@ import './modules/shop/shopFilters/filtersList';
 import './modules/shop/shopFilters/filterActions';
 import './modules/categories';
 import './modules/searchProducts'
+import './modules/productPage/renderProductPage.js'
+
 
 BaseHelpers.checkWebpSupport();
 

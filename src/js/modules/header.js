@@ -1,8 +1,8 @@
 const header = document.querySelector('.header');
-console.log(window.location.pathname)
+const page = window.location.pathname.split('/').pop();
 header.querySelectorAll('.menu__item').forEach(item => {
   const itemHref = item.querySelector('a').getAttribute('href');
-  if(itemHref === window.location.pathname){
+  if(itemHref === page){
     item.classList.add('menu__item-active')
   }
 })

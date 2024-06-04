@@ -40,6 +40,9 @@
 /**
 * Подключение стилей отдельных блоков и секций
 */
+@import 'components/accordion';
+@import 'components/popup';
+
 @import 'components/header';
 @import 'components/basket/';
 
@@ -58,8 +61,10 @@
 @import 'components/payment-form';
 @import 'components/goMail';
 @import 'components/shop';
-@import 'components/popup';
+
 @import 'components/added-popup';
+@import 'components/productPage';
+
 
 /**
 * БЕМ блоки используемые во всё проекте

@@ -1,0 +1,17 @@
+.product{
+    margin-bottom: 20px;
+    &__container{
+
+    }
+    &__wrapper{
+        display: flex;
+        @include adaptiveClamp('gap', 80, 20);
+        @include media-mx(768) {
+            flex-direction: column;
+    
+    }
+    }
+    &__menu{
+        
+    }
+}

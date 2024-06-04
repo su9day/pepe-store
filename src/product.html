@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', { 'title': 'Product' })
+<body>
+    @@include('html/header.html',{})
+    <section class="product">
+        <div class="product__container">
+            <div class="product__wrapper">
+                <div class="swiper product__slider product-slider">
+                    
+                      <div class="product-slide__mark product-slider__counter">
+                        <span id="slide-counter"><span id="rest">22</span>/<span id="total">55</span></span>
+                      </div>
+                    
+                    <div id="main-slider" class="product-slider__wrapper swiper-wrapper">
+                            
+                    </div>
+                    <div class="product-slider-mini__container swiper-container">
+                        <div id="product-mini-slider" class="product-slider-mini__wrapper swiper-wrapper">
+                            
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="product__menu product-menu">
+                    <div class="product-menu__wrapper ">
+                        <h6 class="product-menu__name" id="product-name">Pepka jopa</h6>
+                        <span class="product-menu__price" id="product-price">88$</span>
+                        <div class="product-size size">
+                                <p class="product-size__title size-title">select size</p>
+                                <div class="size__wrapper">
+                                    <input class="size__input" type="radio" name="size" value="s" id="size-s">
+                                    <label for="size-s">
+                                        S
+                                    </label>
+                                    <input class="size__input" type="radio" name="size" value="m" id="size-m">
+                                    <label for="size-m">
+                                        M
+                                    </label>
+                                    <input class="size__input" type="radio" name="size" value="l" id="size-l">
+                                    <label for="size-l">
+                                        L
+                                    </label>
+                                    <input class="size__input" type="radio" name="size" value="xl" id="size-xl" >
+                                    <label for="size-xl">
+                                        XL
+                                    </label>
+                                </div>
+                        </div>
+                        <div class="product-color color">
+                            <p class="product-color__title">select color</p>
+                            <div class="color__wrapper">
+                                <input class="color__input" type="radio" name="color" value="blue" id="color-blue" >
+                                <label class="color__blue" for="color-blue">
+                                </label>
+                                <input class="color__input" type="radio" name="color" value="red" id="olor-red">
+                                <label class="color__red" for="color-red">
+                                </label>
+                                <input class="color__input" type="radio" name="color" value="green" id="color-green">
+                                <label class="color__green" for="color-green">
+                                </label>
+                                <input class="color__input" type="radio" name="color" value="white" id="color-white">
+                                <label class="color__white" for="color-white">
+                                </label>
+                                <input class="color__input" type="radio" name="color" value="black" id="color-black">
+                                <label class="color__black" for="color-black">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="product-actions">
+                            <span class="product-actions__title">Quantity</span>
+
+                            <div class="product-actions__wrapper">
+                                <div class="product-actions__control" data-action="minus">
+                                    -
+                                </div>
+                                <div class="product-actions__current" id="product-counter">
+                                    1
+                                </div>
+                                <div class="product-actions__control" data-action="plus">+</div>
+                            </div>
+                        </div>
+                        <button class="product-add-btn" type="button" id="product-add-btn">add to cart</button>
+
+                        <div class="product-info accordion">
+                            <div class="product-info__wrapper accordion__item">
+                              <div class="product-info__title accordion__header">Description</div>
+                              <div class="product-info__text accordion__content">
+                                <p>All New Stack Sole An added layer of cushioning EVA foam in the midsole for elevated style and comfort.</p>
+                              </div>
+                            </div>
+                            <div class="product-info__wrapper accordion__item">
+                                <div class="product-info__title accordion__header">Product details</div>
+                                <div class="product-info__text accordion__content">
+                                  <p>All New Stack Sole An added layer of cushioning EVA foam in the midsole for elevated style and comfort.</p>
+                                </div>
+                              </div>
+                              <div class="product-info__wrapper accordion__item">
+                                <div class="product-info__title accordion__header">Sizing</div>
+                                <div class="product-info__text accordion__content">
+                                  <p>All New Stack Sole An added layer of cushioning EVA foam in the midsole for elevated style and comfort.</p>
+                                </div>
+                              </div>
+                              <div class="product-info__wrapper accordion__item">
+                                <div class="product-info__title accordion__header">Shipping </div>
+                                <div class="product-info__text accordion__content">
+                                  <p>All New Stack Sole An added layer of cushioning EVA foam in the midsole for elevated style and comfort.</p>
+                                </div>
+                              </div>
+                          
+                              <div class="product-info__wrapper accordion__item">
+                                <div class="product-info__title accordion__header">Returns</div>
+                                <div class="product-info__text accordion__content">
+                                  <p>All New Stack Sole An added layer of cushioning EVA foam in the midsole for elevated style and comfort.</p>
+                                </div>
+                              </div>
+                          </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>   
+    </section>
+    @@include('html/slider.html',{
+        'name': 'also-like',
+        'title': 'also like'
+      })
+    @@include('html/footer.html',{}) 
+    <script defer src="js/productPage.min.js"></script>
+</body>
+</html>
