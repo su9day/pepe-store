@@ -27,7 +27,7 @@ document.body.addEventListener('click',(e) => {
                 productPageParams.set('likes',clickedCartObj.likes)
                 productPageParams.set('totalQuantity',clickedCartObj.quantity.total)
                 productPageParams.set('restQuantity',clickedCartObj.quantity.rest)
-                const productPageUrl = '/product.html?' + productPageParams.toString()
+                const productPageUrl = 'product.html?' + productPageParams.toString()
                 window.location.href = productPageUrl
 
             }
